@@ -1,0 +1,2 @@
+map gb :buffer<space>
+map B :bookmarks!<space>
