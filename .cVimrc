@@ -1,2 +1,11 @@
 map gb :buffer<space>
 map B :bookmarks!<space>
+
+" Code blocks (see below for more info)
+getIP() -> {{
+httpRequest({url: 'http://api.ipify.org/?format=json', json: true},
+            function(res) { Status.setMessage('IP: ' + res.ip); });
+}}
+" Displays your public IP address in the status bar
+map ci :call getIP<CR>
+
