@@ -1,4 +1,6 @@
+" remap buffer to gb
 map gb :buffer<space>
+" map bookmark in a new tab to B
 map B :bookmarks!<space>
 
 " Code blocks (see below for more info)
